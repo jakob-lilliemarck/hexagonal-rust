@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = ["app", "lib"]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Jakob Lilliemarck"]
+edition = "2021"
+readme = "README.md"
+rust-version = "1.75.0"
+publish = false
+
+[workspace.dependencies]
+serde = "1.0.203"
+serde_json = "1.0.119"
+hexagonal = { path = 'lib' }
+chrono = { version = "0.4.38", features = ["serde"] }
